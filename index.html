@@ -2,13 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>GCSE Chemistry Flashcards</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f4f8;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
       padding: 20px;
       text-align: center;
     }
@@ -18,20 +17,21 @@
     .card-grid {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 20px;
+      justify-content: center;
       margin-top: 30px;
     }
     .card {
-      width: 280px;
-      height: 180px;
+      width: 250px;
+      height: 150px;
       perspective: 1000px;
     }
     .card-inner {
       position: relative;
       width: 100%;
       height: 100%;
-      transition: transform 0.6s;
+      text-align: center;
+      transition: transform 0.8s;
       transform-style: preserve-3d;
     }
     .card.flipped .card-inner {
@@ -42,740 +42,96 @@
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
+      background: white;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       display: flex;
-      align-items: center;
       justify-content: center;
-      padding: 20px;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-    .card-front {
-      background-color: #fff;
-      color: #333;
+      align-items: center;
+      padding: 10px;
     }
     .card-back {
-      background-color: #ff6600;
-      color: #fff;
+      background: #ff6600;
+      color: white;
       transform: rotateY(180deg);
     }
   </style>
 </head>
 <body>
   <h1>GCSE Chemistry Flashcards</h1>
-  <p>Click a card to flip it and reveal the answer!</p>
+  <p>Click on a card to flip it and reveal the answer</p>
   <div class="card-grid">
 
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 1?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 1.</div>
+        <div class="card-front">Q1: What is a key concept in Chemistry topic 1?</div>
+        <div class="card-back">A1: This explains the key idea behind Chemistry topic 1.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 2?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 2.</div>
+        <div class="card-front">Q2: What is a key concept in Chemistry topic 2?</div>
+        <div class="card-back">A2: This explains the key idea behind Chemistry topic 2.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 3?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 3.</div>
+        <div class="card-front">Q3: What is a key concept in Chemistry topic 3?</div>
+        <div class="card-back">A3: This explains the key idea behind Chemistry topic 3.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 4?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 4.</div>
+        <div class="card-front">Q4: What is a key concept in Chemistry topic 4?</div>
+        <div class="card-back">A4: This explains the key idea behind Chemistry topic 4.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 5?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 5.</div>
+        <div class="card-front">Q5: What is a key concept in Chemistry topic 5?</div>
+        <div class="card-back">A5: This explains the key idea behind Chemistry topic 5.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 6?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 6.</div>
+        <div class="card-front">Q6: What is a key concept in Chemistry topic 6?</div>
+        <div class="card-back">A6: This explains the key idea behind Chemistry topic 6.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 7?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 7.</div>
+        <div class="card-front">Q7: What is a key concept in Chemistry topic 7?</div>
+        <div class="card-back">A7: This explains the key idea behind Chemistry topic 7.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 8?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 8.</div>
+        <div class="card-front">Q8: What is a key concept in Chemistry topic 8?</div>
+        <div class="card-back">A8: This explains the key idea behind Chemistry topic 8.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 9?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 9.</div>
+        <div class="card-front">Q9: What is a key concept in Chemistry topic 9?</div>
+        <div class="card-back">A9: This explains the key idea behind Chemistry topic 9.</div>
       </div>
     </div>
     
     <div class="card" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 10?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 10.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 11?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 11.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 12?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 12.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 13?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 13.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 14?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 14.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 15?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 15.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 16?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 16.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 17?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 17.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 18?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 18.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 19?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 19.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 20?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 20.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 21?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 21.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 22?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 22.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 23?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 23.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 24?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 24.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 25?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 25.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 26?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 26.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 27?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 27.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 28?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 28.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 29?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 29.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 30?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 30.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 31?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 31.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 32?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 32.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 33?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 33.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 34?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 34.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 35?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 35.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 36?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 36.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 37?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 37.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 38?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 38.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 39?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 39.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 40?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 40.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 41?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 41.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 42?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 42.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 43?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 43.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 44?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 44.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 45?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 45.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 46?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 46.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 47?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 47.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 48?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 48.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 49?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 49.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 50?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 50.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 51?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 51.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 52?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 52.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 53?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 53.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 54?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 54.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 55?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 55.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 56?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 56.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 57?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 57.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 58?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 58.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 59?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 59.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 60?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 60.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 61?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 61.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 62?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 62.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 63?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 63.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 64?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 64.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 65?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 65.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 66?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 66.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 67?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 67.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 68?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 68.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 69?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 69.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 70?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 70.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 71?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 71.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 72?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 72.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 73?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 73.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 74?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 74.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 75?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 75.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 76?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 76.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 77?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 77.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 78?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 78.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 79?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 79.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 80?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 80.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 81?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 81.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 82?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 82.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 83?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 83.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 84?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 84.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 85?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 85.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 86?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 86.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 87?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 87.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 88?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 88.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 89?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 89.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 90?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 90.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 91?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 91.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 92?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 92.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 93?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 93.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 94?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 94.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 95?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 95.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 96?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 96.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 97?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 97.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 98?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 98.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 99?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 99.</div>
-      </div>
-    </div>
-    
-    <div class="card" onclick="this.classList.toggle('flipped')">
-      <div class="card-inner">
-        <div class="card-front">What is a key concept from Topic 100?</div>
-        <div class="card-back">This is the answer that explains the key idea from Topic 100.</div>
+        <div class="card-front">Q10: What is a key concept in Chemistry topic 10?</div>
+        <div class="card-back">A10: This explains the key idea behind Chemistry topic 10.</div>
       </div>
     </div>
     
   </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.querySelectorAll('.card').forEach(function(card) {
-        card.addEventListener('click', function() {
-          this.classList.toggle('flipped');
-        });
-      });
-    });
-  </script>
 </body>
 </html>
